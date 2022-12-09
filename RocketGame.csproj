@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="rocket_off_000.png" />
+    <None Remove="rocket_off_001.png" />
+    <None Remove="rocket_off_002.png" />
+    <None Remove="rocket_off_003.png" />
+    <None Remove="rocket_on_000.png" />
+    <None Remove="rocket_on_001.png" />
+    <None Remove="rocket_on_002.png" />
+    <None Remove="rocket_on_003.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="rocket_off_000.png" />
+    <Resource Include="rocket_off_001.png" />
+    <Resource Include="rocket_off_002.png" />
+    <Resource Include="rocket_off_003.png" />
+    <Resource Include="rocket_on_000.png" />
+    <Resource Include="rocket_on_001.png" />
+    <Resource Include="rocket_on_002.png" />
+    <Resource Include="rocket_on_003.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
